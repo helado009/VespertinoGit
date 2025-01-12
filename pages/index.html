@@ -113,6 +113,7 @@
 
         <pre>
         <code>
+                    <!--El codijo del boton -->
 
         <button onclick="funcion()">Púlsame</button>
             <!--HTML coloca un botón en la pagina -->
@@ -126,18 +127,12 @@
         </code>
         </pre>
 
-        <p><strong>setAttribute(atributo, valor)</strong>: Cambia el valor de un atributo de un elemento.</p>
+        <p><strong>setAttribute(atributo, valor)</strong>: Cambia el valor de un atributo de un elemento. También se puede cambiar el atributo o el estilo de un elemento utilizando:</p>
         <pre>
         <code>
-        document.getElementById("demo").setAttribute("style", "color: red");
-        </code>
-        </pre>
-
-        <h4>También puedes cambiar atributos o estilos de la siguiente manera:</h4>
-        <pre>
-        <code>
-        elemento.atributo = valor;
-        elemento.style.propiedad = estilo;
+            elemento.atributo = valor; 
+            elemento.style.propiedad = estilo;
+            
         </code>
         </pre>
 
@@ -145,16 +140,14 @@
         <p>Podemos añadir manejadores de eventos mediante.</p>
         <pre>
         <code>
-        document.getElementById("boton").onclick = function() {
-            alert("¡Has hecho clic!");
-        };
+        document.getElementById("id").evento = function() 
         </code>
         </pre>
     </div>
 
     <!-- Pie de página -->
     <footer class="bg-dark text-white text-center py-3 mt-5">
-        <p>© 2025 Document Object Model</p>
+        <p>© 2025 El Object Model</p>
     </footer>
 
 </body>
