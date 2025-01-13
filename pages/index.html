@@ -43,23 +43,63 @@
     <!-- las  características -->
     <div id="caracteristicas" class="container mt-5">
         <h2>Características del DOM</h2>
-        <ul>
-            <li>Acceso dinámico a los elementos del documento.</li>
-            <li>Estructura jerárquica basada en nodos.</li>
-            <li>Permite la manipulación de la estructura, estilo y contenido.</li>
-            <li>Interacción con JavaScript para actualizar la página.</li>
-        </ul>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Acceso Dinámico</h5>
+                    <p class="card-text">Permite acceder a los elementos del documento de manera dinámica, lo que posibilita su manipulación en tiempo real.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Estructura Jerárquica</h5>
+                    <p class="card-text">La estructura del DOM se organiza en nodos, donde cada nodo tiene una relación jerárquica.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Manipulación de Contenido</h5>
+                    <p class="card-text">Permite modificar la estructura, el estilo y el contenido de los elementos dentro del documento.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Interacción con JavaScript</h5>
+                    <p class="card-text">A través de JavaScript, el DOM permite actualizar la página y responder a las acciones del usuario.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- los objetivos: lo que busca hacer este -->
     <div id="objetivos" class="container mt-5">
         <h2>Objetivos del DOM</h2>
-        <ul>
-            <li>Facilitar la manipulación de la estructura de los documentos.</li>
-            <li>Permitir una interacción dinámica entre el contenido y el usuario.</li>
-            <li>Optimizar la creación de páginas web interactivas.</li>
-            <li>Proveer una forma estandarizada de manipular la estructura del documento.</li>
-        </ul>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Manipulación Eficiente</h5>
+                    <p class="card-text">Facilitar la manipulación eficiente de la estructura de los documentos HTML y XML.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Interactividad Dinámica</h5>
+                    <p class="card-text">Permitir la interacción dinámica entre el contenido de la página y el usuario.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Optimización de Páginas</h5>
+                    <p class="card-text">Optimizar la creación de páginas web interactivas y accesibles.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Estándares de Manipulación</h5>
+                    <p class="card-text">Proveer una forma estandarizada para acceder y manipular la estructura del documento.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Información del objeto Document 40-->
@@ -67,83 +107,149 @@
         <h2>El Objeto Document</h2>
         <p>El objeto <strong>document</strong> es la base del lado del cliente en las páginas web. Permite acceder y manipular los elementos del documento HTML, como el cuerpo, imágenes, formularios y la cabecera.</p>
 
-        <h3>Propiedades Comunes</h3>
-        <ul>
-            <li><strong>document.body</strong>: Devuelve el elemento <code>&lt;body&gt;</code>.</li>
-            <li><strong>document.title</strong>: Obtiene o cambia el título de la página.</li>
-            <li><strong>document.images</strong>: Lista todas las imágenes de la página.</li>
-            <li><strong>document.bgcolor</strong>: Cambia el color de fondo con nombres como "red" o valores hexadecimales como #FFFFFF.</li>
-        </ul>
+        <!-- Información del objeto Document 41-->
 
-        <h3>Métodos del Objeto Document</h3>
-        <ul>
-            <li><strong>open()</strong>: Abre el documento para edición.</li>
-            <li><strong>close()</strong>: Cierra el documento.</li>
-            <li><strong>write()</strong> / <strong>writeln()</strong>: Inserta contenido HTML dinámico.</li>
-        </ul>
+        <h3>Propiedades Comunes</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Propiedad</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>document.body</strong></td>
+                    <td>Devuelve el elemento <code>&lt;body&gt;</code>.</td>
+                </tr>
+                <tr>
+                    <td><strong>document.title</strong></td>
+                    <td>Obtiene o cambia el título de la página.</td>
+                </tr>
+                <tr>
+                    <td><strong>document.images</strong></td>
+                    <td>Lista todas las imágenes de la página.</td>
+                </tr>
+                <tr>
+                    <td><strong>document.bgcolor</strong></td>
+                    <td>Cambia el color de fondo con nombres como "red" o valores hexadecimales como #FFFFFF.</td>
+                </tr>
+            </tbody>
+        </table>
+
+    <!-- close, open 41-->
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <h3>Métodos del Objeto Document</h3>
+            </div>
+            <div class="card-body">
+                <table class="table table-striped table-responsive">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th >Método</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><strong>open()</strong></td>
+                            <td>Abre el documento para edición.</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><strong>close()</strong></td>
+                            <td>Cierra el documento.</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><strong>write()</strong> / <strong>writeln()</strong></td>
+                            <td>Inserta contenido HTML dinámico.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
             <!-- navegacion del arbol dom 42-->
-
-
+    <div class="card mb-4">
+    <div class="card-header">
         <h3>Navegación en el Árbol DOM</h3>
-        <img src="arboldom.png" alt="Arbol navegacion de Dom"width="400" height="300">
+    </div>
+    <div class="card-body">
+        <img src="arboldom.png" alt="Arbol de Navegación DOM" class="img-fluid mb-3">
         <p>El DOM organiza la página en una estructura jerárquica similar a un árbol. Este árbol está compuesto por nodos, y cada nodo puede tener nodos hijos, padres y hermanos. Al manipular la página, es posible navegar por este árbol para acceder o modificar diferentes elementos.</p>
         <ul>
-            <li><strong>parentNode</strong>: Devuelve el nodo padre de un elemento. Si hablamos de un nodo <strong>hijo</strong>, el nodo padre es aquel que lo contiene. Por ejemplo, si consideramos un elemento &lt;li&gt;, su nodo padre podría ser un &lt;ul&gt;.</li>
-            <li><strong>childNodes</strong>: Proporciona todos los nodos hijos de un elemento, listados en un array. Si hablamos del nodo &lt;body&gt;, sus nodos hijos incluyen elementos como &lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;aside&gt; y &lt;footer&gt;. Estos nodos son <strong>hermanos</strong> entre sí, ya que comparten el mismo nivel en el árbol DOM.</li>
-            <li><strong>firstChild</strong> y <strong>lastChild</strong>: Acceden al primer y al último nodo hijo de un elemento. Si consideras un elemento &lt;ul&gt;, puedes obtener el primer &lt;li&gt; o el último de la lista.</li>
-            <li><strong>previousSibling</strong> y <strong>nextSibling</strong>: Estos métodos permiten recorrer los nodos hermanos de un elemento. <strong>previousSibling</strong> devuelve el nodo hermano anterior, mientras que <strong>nextSibling</strong> devuelve el siguiente.</li>
+            <li><strong>parentNode</strong>: Devuelve el nodo padre de un elemento.</li>
+            <li><strong>childNodes</strong>: Proporciona todos los nodos hijos de un elemento.</li>
+            <li><strong>firstChild</strong> y <strong>lastChild</strong>: Acceden al primer y al último nodo hijo de un elemento.</li>
+            <li><strong>previousSibling</strong> y <strong>nextSibling</strong>: Permiten recorrer los nodos hermanos de un elemento.</li>
         </ul>
-        
-                    <!-- Acceso a los elementos HTML:pag43 -->
+    </div>
+</div>
 
-        <h3>Acceso a los elementos HTML</h3>
-        <p>Lo accesos son:</p>
-        <ul>
-            <li><strong>getElementById(id)</strong>: Este método permite encontrar un elemento específico en la página utilizando su atributo <strong>id</strong>. Por ejemplo, si quieres obtener el elemento con <strong>id="demo"</strong>, puedes utilizar este método.</li>
-            <li><strong>getElementsByName()</strong>: Este método permite obtener todos los elementos que tienen una etiqueta específica.</li>
-            <li><strong>getElementsByTagName()</strong>:recupera, en forma de array, todos los elementos que coinciden con la etiqueta que se utiliza como parámetro. Aparecen en el mismo orden que en el código de la página web.</li>
-        </ul>
-<!--pagg 44-->
-        <h4>Cambio de Elementos:</h4>
+        
+        <!-- Acceso a los elementos HTML 43 -->
+    <div class="card mb-4">
+        <div class="card-header">
+            <h3>Acceso a los elementos HTML</h3>
+        </div>
+        <div class="card-body">
+            <ul>
+                <li><strong>getElementById(id)</strong>: Encuentra un elemento específico usando su atributo id.</li>
+                <li><strong>getElementsByName()</strong>: Obtiene todos los elementos con una etiqueta específica.</li>
+                <li><strong>getElementsByTagName()</strong>: Recupera todos los elementos que coinciden con la etiqueta proporcionada.</li>
+            </ul>
+        </div>
+    </div>
+
+<!--pagg 44 Cambio de Elementos-->
+
+<div class="card mb-4">
+    <div class="card-header">
+        <h3>Cambio de Elementos</h3>
+    </div>
+    <div class="card-body">
         <p>Puedes cambiar el contenido o los atributos de un elemento con los siguientes métodos:</p>
         <ul>
             <li><strong>innerHTML</strong>: Cambia el contenido HTML dentro de un elemento.</li>
         </ul>
-
-        <pre>
-        <code>
-                    <!--El codijo del boton pagg 44-->
-
-        <button onclick="funcion()">Púlsame</button>
-            <!--HTML coloca un botón en la pagina -->
+        <button class="btn btn-primary" onclick="funcion()">Púlsame</button>
         <p id="demo"></p>
-            <!--Espacio HTML donde se escribirá Hola Mundo cuando se pulse el botón -->
         <script>
-        function funcion() {
-            document.getElementById("demo").innerHTML = "Hola Mundo";
-        }
+            function funcion() {
+                document.getElementById("demo").innerHTML = "Hola Mundo";
+            }
         </script>
-        </code>
-        </pre>
 
-        <p><strong>setAttribute(atributo, valor)</strong>: Cambia el valor de un atributo de un elemento. También se puede cambiar el atributo o el estilo de un elemento utilizando:</p>
+        <ul>
+            <li><strong>setAttribute(atributo, valor)</strong>: Cambia el valor de un atributo de un elemento. También se puede cambiar el atributo o el estilo de un elemento utilizando:</li>
+        </ul>
         <pre>
         <code>
             elemento.atributo = valor; 
             elemento.style.propiedad = estilo;
-            
-        </code>
-        </pre>
-
-        <h3>Añadir Manejadores de Eventos</h3>
-        <p>Podemos añadir manejadores de eventos mediante.</p>
-        <pre>
-        <code>
-        document.getElementById("id").evento = function() 
         </code>
         </pre>
     </div>
+</div>
+
+    </div>
+
+
+    <!-- Añadir Manejadores de Eventos -->
+    <div class="card mb-4">
+        <div class="card-header">
+            <h3>Añadir Manejadores de Eventos</h3>
+        </div>
+        <div class="card-body">
+            <p>Podemos añadir manejadores de eventos mediante el siguiente código:</p>
+            <pre><code>document.getElementById("id").evento = function()</code></pre>
+        </div>
+    </div>
+</div>
 
     <!-- Pie de página -->
     <footer class="bg-dark text-white text-center py-3 mt-5">
